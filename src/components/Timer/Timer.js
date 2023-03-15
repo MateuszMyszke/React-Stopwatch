@@ -1,7 +1,7 @@
 import styles from './Timer.module.scss';
 import Button from '../Button/Button';
 import { useState, useEffect } from 'react';
-import Tc from '../Tc/Tc';
+import TimeConverter from '../TimeConverter/TimeConverter';
 
 
 const Timer = () => {
@@ -23,7 +23,7 @@ const Timer = () => {
   
   return (
     <div className={styles.timer}>
-      <Tc time={time}/>
+      <TimeConverter time={time}/>
       
         <Button onClick={() => setRunning(true)}>Start</Button>
         <Button onClick={() => setRunning(false)}>Stop</Button>
